@@ -1,41 +1,33 @@
 import React from "react";
-import Logo from '../assets/claspees_logo2.png';
+import { Link } from "react-router-dom";
+import Logo from "../assets/claspees_logo2.png";
 
 const Navbar = () => {
   return (
     <header className="bg-[#FFFFF0] flex items-center justify-between px-8 py-4 shadow-md">
-      {/* Logo */}
       <div className="flex items-center">
-        <img
-          src={Logo}
-          alt="Claspeer Logo"
-          className="h-10"
-        />
+        <img src={Logo} alt="Claspees Logo" className="h-10" />
       </div>
-
-      {/* Navigation Links */}
       <nav className="flex space-x-8 text-purple-600 font-medium">
-        <a href="#home" className="hover:underline">
+        <Link to="/" className="hover:underline">
           Home
-        </a>
-        <a href="#shop" className="hover:underline">
+        </Link>
+        <Link to="/shop" className="hover:underline">
           Shop
-        </a>
-        <a href="#about" className="hover:underline">
+        </Link>
+        <Link to="/about" className="hover:underline">
           About
-        </a>
-        <a href="#contact" className="hover:underline">
+        </Link>
+        <Link to="/contact" className="hover:underline">
           Contact
-        </a>
-        <a href="#faqs" className="hover:underline">
+        </Link>
+        <Link to="/faqs" className="hover:underline">
           FAQ's
-        </a>
-        <a href="#howto" className="hover:underline">
+        </Link>
+        <Link to="/howto" className="hover:underline">
           How To
-        </a>
+        </Link>
       </nav>
-
-      {/* User and Cart Icons */}
       <div className="flex items-center space-x-6 text-purple-600">
         <button className="hover:text-purple-800">
           <i className="fa fa-user"></i>

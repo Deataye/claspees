@@ -1,15 +1,27 @@
 
-import Footer from "../components/Footer";
-import HeroSection from "../components/Hero";
+import AccessoryShowcase from "../components/AccessoryShowcase.jsx";
 
-
+import CollectionShowcase from "../components/CollectionShowcase.jsx";
+import ProductsSection from "../components/ProductsSection.jsx";
+import ProductHighlight from "../components/ProductHighlight.jsx"
+import HeroSection from "../components/HeroSection.jsx";
+import NewsletterSection from "../components/NewsletterSection.jsx";
 function HomePage() {
   return (
     <>
       
-      <HeroSection/>
+     <HeroSection/>
+     <ProductHighlight/>
+
+      <AccessoryShowcase/>
+      <CollectionShowcase/>
+      <NewsletterSection/>
       
-      <Footer/>
+
+
+   
+     
+ 
     </>
   );
 }

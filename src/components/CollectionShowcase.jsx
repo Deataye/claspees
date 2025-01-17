@@ -1,6 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
+import OriginalCollection1 from "../assets/OriginalCollection1.jpg";
+import OriginalCollection2 from "../assets/OriginalCollection2.png";
+import OriginalCollection3 from "../assets/OriginalCollection3.png";
+import OriginalCollection4 from "../assets/OriginalCollection4.png";
+import OriginalCollection5 from "../assets/OriginalCollection5.png";
+import OriginalCollection6 from "../assets/OriginalCollection6.png";
+import OriginalCollection7 from "../assets/OriginalCollection7.png";
+import OriginalCollection8 from "../assets/OriginalCollection8.png";
+import OriginalCollection9 from "../assets/OriginalCollection9.png";
+import HeroBg3 from "../assets/slide-4.png";
 
 const CollectionShowcase = () => {
+  // Mapping images for hover effect
+  const products = [
+    {
+      defaultImg: OriginalCollection5,
+      hoverImg: OriginalCollection1,
+      title: "Product 1",
+    },
+    {
+      defaultImg: OriginalCollection6,
+      hoverImg: OriginalCollection2,
+      title: "Product 2",
+    },
+    {
+      defaultImg: OriginalCollection7,
+      hoverImg: OriginalCollection3,
+      title: "Product 3",
+    },
+    {
+      defaultImg: OriginalCollection8,
+      hoverImg: OriginalCollection4,
+      title: "Product 4",
+    },
+    {
+      defaultImg: OriginalCollection9,
+      hoverImg: HeroBg3,
+      title: "Product 5",
+    },
+  ];
+
   return (
     <section className="bg-white py-8">
       {/* Header */}
@@ -13,84 +52,25 @@ const CollectionShowcase = () => {
         Original Collection
       </h2>
 
-      {/* Collection Grid */}
-      <div className="flex flex-col lg:flex-row items-center justify-center mt-8 px-4 lg:px-16 space-y-8 lg:space-y-0 lg:space-x-8">
-        {/* Left Section: Image */}
-        <div className="flex-1 flex justify-center">
-          <img
-            src="/path-to-your-model-image.png"
-            alt="Model wearing Claspees"
-            className="rounded-lg shadow-lg max-w-full"
-          />
-        </div>
-
-        {/* Right Section: Products */}
-        <div className="flex-1 grid grid-cols-2 gap-6 justify-items-center">
-          {/* Product Rows */}
-          <div className="flex flex-col items-center">
+      {/* Products Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 px-4 lg:px-16">
+        {products.map((product, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center group"
+          >
+            {/* Image with hover effect */}
             <img
-              src="/path-to-product1.png"
-              alt="Product 1"
-              className="w-20 h-20 object-contain"
+              src={product.defaultImg}
+              alt={product.title}
+              className="w-40 h-40 object-contain rounded-lg shadow-lg transition-transform transform group-hover:scale-105"
+              onMouseOver={(e) => (e.currentTarget.src = product.hoverImg)}
+              onMouseOut={(e) => (e.currentTarget.src = product.defaultImg)}
             />
-            <p className="text-center mt-2 font-bold">"Love" Pack</p>
+            {/* Title */}
+            <p className="text-center font-bold mt-4">{product.title}</p>
           </div>
-          <div className="flex flex-col items-center">
-            <img
-              src="/path-to-product2.png"
-              alt="Product 2"
-              className="w-20 h-20 object-contain"
-            />
-            <p className="text-center mt-2 font-bold">"Ballin'" Pack</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <img
-              src="/path-to-product3.png"
-              alt="Product 3"
-              className="w-20 h-20 object-contain"
-            />
-            <p className="text-center mt-2 font-bold">"Sprinkles" Pack</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <img
-              src="/path-to-product4.png"
-              alt="Product 4"
-              className="w-20 h-20 object-contain"
-            />
-            <p className="text-center mt-2 font-bold">"Express Yourself" Pack</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Bottom Section: Additional Products */}
-      <div className="flex flex-wrap justify-center mt-8 px-4 lg:px-16 space-x-8">
-        {/* Individual Product */}
-        <div className="w-48 flex flex-col items-center">
-          <img
-            src="/path-to-product5.png"
-            alt="Product 5"
-            className="w-24 h-24 object-contain"
-          />
-          <p className="text-center font-bold mt-4">"I Am" Pack</p>
-          <p className="text-center text-gray-600">$9.99 USD</p>
-          <button className="bg-purple-600 text-white mt-4 px-4 py-2 rounded-full hover:bg-purple-700 transition">
-            Add to cart
-          </button>
-        </div>
-
-        {/* Another Product */}
-        <div className="w-48 flex flex-col items-center">
-          <img
-            src="/path-to-product6.png"
-            alt="Product 6"
-            className="w-24 h-24 object-contain"
-          />
-          <p className="text-center font-bold mt-4">"Express Yourself" Pack</p>
-          <p className="text-center text-gray-600">$9.99 USD</p>
-          <button className="bg-purple-600 text-white mt-4 px-4 py-2 rounded-full hover:bg-purple-700 transition">
-            Add to cart
-          </button>
-        </div>
+        ))}
       </div>
 
       {/* Chat Icon */}
