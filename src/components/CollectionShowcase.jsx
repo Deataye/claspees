@@ -11,7 +11,6 @@ import OriginalCollection9 from "../assets/OriginalCollection9.png";
 import HeroBg3 from "../assets/slide-4.png";
 
 const CollectionShowcase = () => {
-  // Mapping images for hover effect
   const products = [
     {
       defaultImg: OriginalCollection5,
@@ -42,18 +41,33 @@ const CollectionShowcase = () => {
 
   return (
     <section className="bg-white py-8">
-      {/* Header */}
-      <div className="bg-black text-white py-4 text-center font-bold text-xl uppercase">
-        Collect Them All
+      {/* Scrolling Text Banner */}
+      <div className="bg-black text-white overflow-hidden whitespace-nowrap">
+        <div className="inline-block animate-marquee">
+          <span className="text-2xl font-bold uppercase px-8">Collect Them All</span>
+          <span className="text-2xl font-bold uppercase px-8">•</span>
+          <span className="text-2xl font-bold uppercase px-8">Collect Them All</span>
+          <span className="text-2xl font-bold uppercase px-8">•</span>
+          <span className="text-2xl font-bold uppercase px-8">Collect Them All</span>
+          <span className="text-2xl font-bold uppercase px-8">•</span>
+        </div>
+        <div className="inline-block animate-marquee2">
+          <span className="text-2xl font-bold uppercase px-8">Collect Them All</span>
+          <span className="text-2xl font-bold uppercase px-8">•</span>
+          <span className="text-2xl font-bold uppercase px-8">Collect Them All</span>
+          <span className="text-2xl font-bold uppercase px-8">•</span>
+          <span className="text-2xl font-bold uppercase px-8">Collect Them All</span>
+          <span className="text-2xl font-bold uppercase px-8">•</span>
+        </div>
       </div>
 
       {/* Title */}
-      <h2 className="text-orange-500 text-center text-3xl font-bold mt-6">
+      <h2 className="text-orange-500 text-center text-4xl font-bold mt-12 mb-16">
         Original Collection
       </h2>
 
       {/* Products Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 px-4 lg:px-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 px-8 lg:px-24">
         {products.map((product, index) => (
           <div
             key={index}
@@ -63,24 +77,14 @@ const CollectionShowcase = () => {
             <img
               src={product.defaultImg}
               alt={product.title}
-              className="w-40 h-40 object-contain rounded-lg shadow-lg transition-transform transform group-hover:scale-105"
+              className="w-64 h-64 object-contain transition-transform transform group-hover:scale-110"
               onMouseOver={(e) => (e.currentTarget.src = product.hoverImg)}
               onMouseOut={(e) => (e.currentTarget.src = product.defaultImg)}
             />
             {/* Title */}
-            <p className="text-center font-bold mt-4">{product.title}</p>
+            <p className="text-center font-bold text-lg mt-6">{product.title}</p>
           </div>
         ))}
-      </div>
-
-      {/* Chat Icon */}
-      <div className="absolute bottom-6 right-6 bg-white rounded-full p-3 shadow-md">
-        <div className="relative">
-          <i className="fas fa-comment text-cyan-600 text-2xl"></i>
-          <span className="absolute -top-1 -right-2 bg-red-500 text-white text-xs font-bold rounded-full px-1">
-            1
-          </span>
-        </div>
       </div>
     </section>
   );

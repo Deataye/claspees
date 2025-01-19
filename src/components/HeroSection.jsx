@@ -30,46 +30,47 @@ const HeroSection = () => {
   return (
     <section
       className="relative h-screen flex items-center px-8 md:px-16 overflow-hidden transition-all duration-1000"
-      style={{ backgroundColor: slides[currentIndex].bgColor }}
+      style={{ 
+        backgroundColor: slides[currentIndex].bgColor,
+        transition: 'background-color 1s ease-in-out'
+      }}
     >
       {/* Text Content */}
-      <div className="flex-1 z-10 text-white">
-        <h3 className="text-xl font-semibold mb-2">Introducing Claspees™</h3>
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-snug">
+      <div className="w-5/12 z-10 text-white">
+        <h3 className="text-2xl font-semibold mb-4">Introducing Claspees™</h3>
+        <h1 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
           The fashionable solution to pesky drawstring loss!
         </h1>
         <Link
           to="/shop"
-          className="inline-block px-6 py-3 bg-transparent border-2 border-white text-white font-medium rounded-full hover:bg-white hover:text-[#00AEEF] transition"
+          className="inline-block px-8 py-4 bg-transparent border-2 border-white text-white text-lg font-medium rounded-full hover:bg-white hover:text-[#00AEEF] transition-all duration-300"
         >
           Shop
         </Link>
       </div>
 
       {/* Rotating Images */}
-      <div className="flex-1 relative aspect-square">
-        <div className="absolute inset-0 flex items-center justify-center">
-          {slides.map((slide, index) => (
-            <div
-              key={index}
-              className={`absolute w-full h-full transition-opacity duration-1000 ${
-                index === currentIndex ? "opacity-100" : "opacity-0"
-              }`}
-            >
-              <img
-                src={slide.image}
-                alt={`Slide ${index + 1}`}
-                className="object-contain w-full h-full"
-              />
-            </div>
-          ))}
-        </div>
+      <div className="w-7/12 h-full flex items-center justify-center pt-20">
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`absolute w-4/5 h-4/5 transition-all duration-1000 ${
+              index === currentIndex ? "opacity-100 scale-100" : "opacity-0 scale-95"
+            }`}
+          >
+            <img
+              src={slide.image}
+              alt={`Slide ${index + 1}`}
+              className="w-full h-full object-contain transform hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+        ))}
       </div>
 
       {/* Chat Icon */}
-      <div className="absolute bottom-6 right-6 bg-white rounded-full p-3 shadow-md hover:shadow-lg transition cursor-pointer">
+      <div className="absolute bottom-8 right-8 bg-white rounded-full p-4 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
         <div className="relative">
-          <div className="w-6 h-6 flex items-center justify-center">
+          <div className="w-8 h-8 flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -83,7 +84,7 @@ const HeroSection = () => {
               <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
             </svg>
           </div>
-          <span className="absolute -top-1 -right-2 bg-red-500 text-white text-xs font-bold rounded-full w-4 h-4 flex items-center justify-center">
+          <span className="absolute -top-1 -right-2 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
             1
           </span>
         </div>
