@@ -1,7 +1,7 @@
 import React from "react";
-import Newsletter1 from "../assets/Newsletter1.png";
-import Newsletter2 from "../assets/Newsletter2.png";
-import Newsletter3 from "../assets/Newsletter3.png";
+import Newsletter1 from "../assets/NewsLetter1.png";
+import Newsletter2 from "../assets/NewsLetter2.png";
+import Newsletter3 from "../assets/NewsLetter3.png";
 
 const NewsletterSection = () => {
   return (
