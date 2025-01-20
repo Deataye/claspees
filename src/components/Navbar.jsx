@@ -31,12 +31,12 @@ const Navbar = () => {
       </nav>
       
       <div className="flex items-center space-x-6 text-purple-600">
-        <button className="hover:text-purple-800 text-xl">
+      <Link to="/login" className="hover:text-purple-800 text-xl">
           <i className="fa fa-user"></i>
-        </button>
-        <button className="hover:text-purple-800 text-xl">
+        </Link>
+        <Link to="/cart" className="hover:text-purple-800 text-xl">
           <i className="fa fa-shopping-bag"></i>
-        </button>
+        </Link>
       </div>
     </header>
   );

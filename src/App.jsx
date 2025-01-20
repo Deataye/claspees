@@ -11,6 +11,8 @@ import AboutSection from "./pages/About.jsx"; // Import About
 import HomePage from "./pages/HomePage.jsx"; // Import Home
 import Shop from "./pages/Shop.jsx"; // Import Shop
 import PopUp from "./components/PopUp.jsx";
+import Login from "./pages/Login.jsx";
+import Cart from "./pages/Cart.jsx";
 function App() {
   return (
     <Router>
@@ -25,6 +27,8 @@ function App() {
           <Route path="/faqs" element={<FAQs />} />
           <Route path="/howto" element={<HowToSection />} />
           <Route path="/admin" element={<AdminPanel />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </div>
       
