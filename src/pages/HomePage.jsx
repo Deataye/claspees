@@ -2,7 +2,7 @@
 import AccessoryShowcase from "../components/AccessoryShowcase.jsx";
 
 import CollectionShowcase from "../components/CollectionShowcase.jsx";
-import ProductsSection from "../components/ProductsSection.jsx";
+
 import ProductHighlight from "../components/ProductHighlight.jsx"
 import HeroSection from "../components/HeroSection.jsx";
 import NewsletterSection from "../components/NewsletterSection.jsx";

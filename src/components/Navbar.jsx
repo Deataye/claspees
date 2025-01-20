@@ -4,7 +4,7 @@ import Logo from "../assets/claspees_logo2.png";
 
 const Navbar = () => {
   return (
-    <header className="bg-[#FFFFF0] flex items-center justify-between px-6 py-6 shadow-md">
+    <header className="bg-[#FFFFF0] max-w-[1000px] mx-auto flex items-center justify-between px-6 py-6">
       <div className="flex items-center">
         <img src={Logo} alt="Claspees Logo" className="h-14" />
       </div>

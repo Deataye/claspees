@@ -11,10 +11,7 @@ export default {
         'black-full': 'rgba(0, 0, 0, 1)', 
       },
       fontFamily: {
-        diplomata: ['"Diplomata SC"', 'cursive'], // Add Diplomata SC
-        gidugu: ['"Gidugu"', 'sans-serif'],       // Add Gidugu
-        inter: ['"Inter"', 'sans-serif'],         // Add Inter
-        manrope: ['"Manrope"', 'sans-serif'],     // Add Manrope
+        montserrat: ['Montserrat', 'sans-serif'],
       },
     },
   },

@@ -3,17 +3,17 @@ import Productimage from "../assets/ProductsSection1.png"; // Ensure the path is
 
 const ProductsSection = () => {
   return (
-    <section className="bg-sky-500 py-16 px-8 md:px-16 lg:px-24 flex flex-col md:flex-row items-center relative">
+    <section className="bg-white   flex flex-col md:flex-row items-center relative">
       {/* Text Content */}
-      <div className="md:w-1/2 text-white">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">OUR PRODUCTS</h2>
-        <p className="text-lg leading-relaxed mb-4">
+      <div className="md:w-1/2 h-screen bg-[#00AEEF] text-white flex flex-col justify-start py-10 px-8 lg:px-16">
+        <h2 className="text-4xl font-extrabold mb-6">OUR PRODUCTS</h2>
+        <p className="text-lg leading-relaxed mb-6">
           Have you ever experienced that sinking feeling when you pull your
           favorite hoodie out of the washer, to find one of the drawstrings
           wholly lost? We've all felt that frustration. But fear not, the
           solution has arrived, called Claspees™.
         </p>
-        <p className="text-lg leading-relaxed mb-4">
+        <p className="text-lg leading-relaxed mb-6">
           Say goodbye to those moments of drawstring dread, as Claspees™ is here
           to end the hassle once and for all. From hoodies to footwear,
           Claspees™ has you covered, literally.
@@ -34,16 +34,6 @@ const ProductsSection = () => {
           alt="Our Products"
           className="max-w-full h-auto object-contain"
         />
-      </div>
-
-      {/* Chat Icon */}
-      <div className="absolute bottom-6 right-6 bg-white rounded-full p-3 shadow-md">
-        <div className="relative">
-          <i className="fas fa-comment text-[#00aaff] text-2xl"></i>
-          <span className="absolute -top-1 -right-2 bg-red-500 text-white text-xs font-bold rounded-full px-1">
-            1
-          </span>
-        </div>
       </div>
     </section>
   );

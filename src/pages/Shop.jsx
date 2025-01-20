@@ -44,12 +44,12 @@ const Shop = () => {
   ];
 
   return (
-    <section className="bg-white py-12">
+    <section className="bg-white mx-auto max-w-[1000px] py-12">
       {/* Title Section */}
-      <h1 className="text-center text-3xl font-bold mb-4">
+      <h1 className=" text-start text-3xl font-montserrat  font-extrabold mb-4">
         ORIGINAL COLLECTION STARTER PACKS
       </h1>
-      <p className="text-center text-gray-600 mb-8 px-4 lg:px-32">
+      <p className="  text-gray-600 mb-8 ">
         Start your collection with everything you need to embrace your cool.
         Every Claspees™ wave showcases exclusive designs that will remain
         one-of-a-kind, never to resurface. Once they bid adieu, they're gone
@@ -58,21 +58,18 @@ const Shop = () => {
       </p>
 
       {/* Product Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 lg:px-24">
+      <div className="grid grid-cols-1 sm:grid-cols-2 max-w-[1100px] mx-auto lg:grid-cols-3 gap-12 px-8">
         {products.map((product, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center group bg-gray-100 p-4 rounded-lg shadow-md"
-          >
-            {/* Hover Effect on Image */}
+          <div key={index} className="flex flex-col items-center group">
+            {/* Image with hover effect */}
             <img
               src={product.defaultImg}
-              alt={product.name}
-              className="w-32 h-32 object-contain rounded-lg mb-4 transition-transform transform group-hover:scale-110"
+              alt={product.title}
+              className="w-[360px] h-[460px] object-contain rounded-3xl transition-transform transform group-hover:scale-110"
               onMouseOver={(e) => (e.currentTarget.src = product.hoverImg)}
               onMouseOut={(e) => (e.currentTarget.src = product.defaultImg)}
             />
-            {/* Product Name */}
+            {/* Title */}
             <p className="text-center font-semibold">{product.name}</p>
             <p className="text-center text-gray-700">{product.price}</p>
             {/* Add to Cart Button */}

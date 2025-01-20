@@ -4,7 +4,7 @@ const AboutValuesSection = () => {
   return (
     <section className="bg-white">
       {/* About Us Section */}
-      <div className="py-16 px-8 md:px-16 lg:px-24 text-center md:text-left">
+      <div className="py-16 px-8 md:px-16 lg:px-24 text-center font-montserrat md:text-left">
         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">
           ABOUT US
         </h2>
@@ -21,14 +21,14 @@ const AboutValuesSection = () => {
       </div>
 
       {/* Our Values Section */}
-      <div className="bg-gray-100 py-16 px-8 md:px-16 lg:px-24">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black text-center">
+      <div className="bg-gray-100 py-0 px-8 font-montserrat md:px-16 lg:px-0">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black px-24">
           OUR VALUES
         </h2>
 
         {/* Row 1 */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-          <div className="bg-sky-500 p-8 text-white rounded-lg">
+        <div className="grid grid-cols-1 font-montserrat md:grid-cols-3 ">
+          <div className="bg-sky-500 p-8 text-white ">
             <h3 className="text-xl font-bold mb-4">UNAPOLOGETIC OPTIMISTS</h3>
             <p className="text-base leading-relaxed">
               We envision a limitless world of possibilities, unlocked through a
@@ -37,7 +37,7 @@ const AboutValuesSection = () => {
               shared experiences.
             </p>
           </div>
-          <div className="bg-purple-600 p-8 text-white rounded-lg">
+          <div className="bg-purple-600 p-8 text-white ">
             <h3 className="text-xl font-bold mb-4">INHERENTLY FUNCTIONAL</h3>
             <p className="text-base leading-relaxed">
               We embrace functionality in our designs and operations, ensuring
@@ -45,7 +45,7 @@ const AboutValuesSection = () => {
               personal style.
             </p>
           </div>
-          <div className="bg-lime-500 p-8 text-white rounded-lg">
+          <div className="bg-lime-500 p-8 text-white ">
             <h3 className="text-xl font-bold mb-4">BRILLIANTLY VIBRANT</h3>
             <p className="text-base leading-relaxed">
               Our energy is vibrant and infectious, spreading positivity and
@@ -55,8 +55,8 @@ const AboutValuesSection = () => {
         </div>
 
         {/* Row 2 */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-pink-500 p-8 text-white rounded-lg">
+        <div className="grid grid-cols-1 font-montserrat md:grid-cols-3 ">
+          <div className="bg-pink-500 p-8 text-white ">
             <h3 className="text-xl font-bold mb-4">IMAGINATIVELY EXPRESSIVE</h3>
             <p className="text-base leading-relaxed">
               We empower individuals to be expressive and showcase their unique
@@ -64,7 +64,7 @@ const AboutValuesSection = () => {
               to tell their own fashion narratives.
             </p>
           </div>
-          <div className="bg-orange-500 p-8 text-white rounded-lg">
+          <div className="bg-orange-500 p-8 text-white ">
             <h3 className="text-xl font-bold mb-4">DELIGHTFULLY INCLUSIVE</h3>
             <p className="text-base leading-relaxed">
               We celebrate the uniqueness of every individual and stand
@@ -72,7 +72,7 @@ const AboutValuesSection = () => {
               embrace themselves and one-of-a-kind style.
             </p>
           </div>
-          <div className="bg-sky-400 p-8 text-white rounded-lg">
+          <div className="bg-sky-400 p-8 text-white ">
             <h3 className="text-xl font-bold mb-4">
               ENTHUSIASTICALLY COLLECTIBLE
             </h3>
