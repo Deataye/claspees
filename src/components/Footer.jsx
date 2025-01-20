@@ -1,4 +1,13 @@
 import React from "react";
+import Logo1 from '../assets/american-express-logo.svg'
+import Logo2 from '../assets/google-pay-logo.png'
+import Logo3 from '../assets/dinners-club-logo.svg'
+import Logo4 from '../assets/discover-logo.svg'
+import Logo5 from '../assets/google-pay-logo.png'
+import Logo6 from '../assets/mastercard-logo.svg'
+import Logo7 from '../assets/paypal-logo.svg'
+import Logo8 from '../assets/shop-logo.png'
+import Logo9 from '../assets/visa-logo.png'
 
 const Footer = () => {
   return (
@@ -52,34 +61,49 @@ const Footer = () => {
       {/* Payment Methods */}
       <div className="flex justify-center items-center flex-wrap gap-4 mb-6">
         <img
-          src="/path-to-payment-icon1.png"
+          src={Logo1}
           alt="Payment Method 1"
-          className="h-8"
+          className="h-6"
         />
         <img
-          src="/path-to-payment-icon2.png"
+          src={Logo2}
           alt="Payment Method 2"
-          className="h-8"
+          className="h-6"
         />
         <img
-          src="/path-to-payment-icon3.png"
+          src={Logo3}
           alt="Payment Method 3"
-          className="h-8"
+          className="h-6"
         />
         <img
-          src="/path-to-payment-icon4.png"
+          src={Logo4}
           alt="Payment Method 4"
-          className="h-8"
+          className="h-6"
         />
         <img
-          src="/path-to-payment-icon5.png"
+          src={Logo5}
           alt="Payment Method 5"
-          className="h-8"
+          className="h-6"
         />
         <img
-          src="/path-to-payment-icon6.png"
+          src={Logo6}
           alt="Payment Method 6"
-          className="h-8"
+          className="h-6"
+        />
+        <img
+          src={Logo7}
+          alt="Payment Method 6"
+          className="h-6"
+        />
+        <img
+          src={Logo8}
+          alt="Payment Method 6"
+          className="h-6"
+        />
+        <img
+          src={Logo9}
+          alt="Payment Method 6"
+          className="h-6"
         />
       </div>
 
