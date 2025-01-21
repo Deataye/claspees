@@ -14,7 +14,7 @@ const Login = () => {
   };
 
   return (
-    <div className=" bg-gray-100 flex pt-16 justify-center">
+    <div className=" bg-gray-100 flex pt-16 mt-20 justify-center">
       <div className="bg-white w-full max-w-md p-8  rounded-lg shadow-md">
         <h1 className="text-2xl font-bold text-center mb-4">Claspees</h1>
         <h2 className="text-2xl font-bold text-start mb-6">Log in</h2>

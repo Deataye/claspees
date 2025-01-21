@@ -1,11 +1,36 @@
-import React from "react";
-import Newsletter1 from "../assets/NewsLetter1.png";
-import Newsletter2 from "../assets/NewsLetter2.png";
-import Newsletter3 from "../assets/NewsLetter3.png";
+import React, { useRef, useEffect } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Newsletter1 from '../assets/NewsLetter1.png';
+import Newsletter2 from '../assets/NewsLetter2.png';
+import Newsletter3 from '../assets/NewsLetter3.png';
 
+gsap.registerPlugin(ScrollTrigger);
 const NewsletterSection = () => {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const element = sectionRef.current;
+
+    gsap.fromTo(
+      element,
+      { y: 100, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 3,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: element,
+          start: 'top 80%',
+          toggleActions: 'play none none reset',
+        },
+      }
+    );
+  }, []);
+
   return (
-    <section>
+    <section ref={sectionRef}>
       {/* Service Information */}
       <div className="bg-[#FF03E7] font-montserrat text-black py-8">
         <div className="container mx-auto flex flex-col lg:flex-row justify-evenly items-center space-y-8 lg:space-y-0 lg:space-x-4">
@@ -78,3 +103,5 @@ const NewsletterSection = () => {
 };
 
 export default NewsletterSection;
+
+
