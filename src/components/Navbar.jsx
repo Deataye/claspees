@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-[#FFFFF0] w-full">
+    <header className="bg-[#FFFFF0] w-full fixed top-0 z-50 shadow-md">
       <div className="max-w-[1100px] mx-auto flex items-center justify-between py-4">
         {/* Logo */}
         <div className="flex items-center">
