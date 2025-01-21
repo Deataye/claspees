@@ -3,7 +3,7 @@ import AboutHeroBg from "../assets/About-hero.png"; // Ensure the image path is 
 
 const AboutSection = () => {
   return (
-    <section className="relative bg-orange-500 h-full flex justify-center items-center">
+    <section className="relative bg-orange-500 mt-20 h-full flex justify-center items-center">
       {/* Image Content */}
       <div className="flex justify-center items-center">
         <img

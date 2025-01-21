@@ -44,7 +44,7 @@ const Shop = () => {
   ];
 
   return (
-    <section className="bg-white mx-auto lg:max-w-[1300px] py-12">
+    <section className="bg-white mx-auto mt-10 lg:max-w-[1300px] py-12">
       {/* Title Section */}
       <h1 className=" text-center lg:text-start text-[35px] lg:text-[55px] font-montserrat  font-extrabold mb-4">
         ORIGINAL COLLECTION STARTER PACKS

@@ -55,7 +55,7 @@ const NewsletterSection = () => {
       {/* Newsletter Section */}
       <div className="bg-[#FFD600] py-10">
         <div className="container mx-auto text-center">
-          <h2 className="text-[#00AAE6] text-4xl font-extrabold mb-4">
+          <h2 className="text-[#00AAE6] text-5xl font-extrabold mb-4">
             Don't Miss a Drop
           </h2>
           <p className="text-blue-600 mb-6">

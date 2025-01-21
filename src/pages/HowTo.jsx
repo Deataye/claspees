@@ -7,7 +7,7 @@ import VideoThumbnail4 from "../assets/thumbnail4.png";
 
 const HowTo = () => {
   return (
-    <section>
+    <section className="mt-10">
       {/* How to Apply Claspees Section */}
       <div className="flex justify-center py-10">
         <div className="w-full max-w-full">

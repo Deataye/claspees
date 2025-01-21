@@ -123,11 +123,11 @@ const FAQ = () => {
   ]
 
   return (
-    <section className="bg-white py-8 font-montserrat">
+    <section className="bg-white py-8 mt-16 font-montserrat">
       {/* FAQ Header */}
       <div className="text-center py-8">
         <h2 className="text-[55px] font-extrabold">FAQ's</h2>
-        <p className="text-gray-600 mt-2">
+        <p className="text-gray-600 text-lg mt-2">
           Want to know more about Claspees? Don't worry, we got you covered!
         </p>
       </div>

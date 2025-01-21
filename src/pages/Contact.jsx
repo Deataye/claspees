@@ -3,7 +3,7 @@ import AdminPanel from "./AdminPanel";
 
 const ContactUs = () => {
   return (
-    <section className="flex justify-center bg-white">
+    <section className="flex justify-center mt-16 bg-white">
       <div className="w-full max-w-md px-6 py-8 bg-white  rounded-lg">
         {/* Heading */}
         <h1 className="text-[55px] font-montserrat font-extrabold text-center mb-2 text-black">
