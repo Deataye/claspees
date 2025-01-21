@@ -62,19 +62,19 @@ const CollectionShowcase = () => {
       </div>
 
       {/* Title */}
-      <h2 className="text-orange-500 max-w-[1000px] mx-auto text-4xl font-montserrat font-extrabold mt-12 ">
+      <h2 className="text-orange-500 max-w-[1000px] mx-auto text-[55px] font-montserrat font-extrabold mt-12 ">
         Original Collection
       </h2>
 
       {/* Products Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 max-w-[1000px] mx-auto lg:grid-cols-3 gap-12 ">
         {products.map((product, index) => (
-          <div key={index} className="flex flex-col items-center group">
+          <div key={index} className="flex flex-col items-center  group">
             {/* Image with hover effect */}
             <img
               src={product.defaultImg}
               alt={product.title}
-              className="w-[360px] h-[460px] object-contain rounded-3xl transition-transform transform group-hover:scale-110"
+              className="w-[360px] h-[460px] object-contain rounded-xl transition-transform transform group-hover:scale-110"
               onMouseOver={(e) => (e.currentTarget.src = product.hoverImg)}
               onMouseOut={(e) => (e.currentTarget.src = product.defaultImg)}
             />

@@ -5,7 +5,7 @@ const AboutValuesSection = () => {
     <section className="bg-white">
       {/* About Us Section */}
       <div className="py-16 px-8 md:px-16 lg:px-24 text-center font-montserrat md:text-left">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">
+        <h2 className="text-3xl md:text-[55px] font-bold mb-6 text-black">
           ABOUT US
         </h2>
         <p className="text-lg text-gray-700 leading-relaxed">
@@ -22,7 +22,7 @@ const AboutValuesSection = () => {
 
       {/* Our Values Section */}
       <div className="bg-gray-100 py-0 px-8 font-montserrat md:px-16 lg:px-0">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black px-24">
+        <h2 className="text-3xl md:text-[55px] font-bold mb-6 text-black lg:px-24">
           OUR VALUES
         </h2>
 

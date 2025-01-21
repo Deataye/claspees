@@ -6,6 +6,8 @@ import CollectionShowcase from "../components/CollectionShowcase.jsx";
 import ProductHighlight from "../components/ProductHighlight.jsx"
 import HeroSection from "../components/HeroSection.jsx";
 import NewsletterSection from "../components/NewsletterSection.jsx";
+
+
 function HomePage() {
   return (
     <>
@@ -17,7 +19,7 @@ function HomePage() {
       <CollectionShowcase/>
       <NewsletterSection/>
       
-
+ 
 
    
      

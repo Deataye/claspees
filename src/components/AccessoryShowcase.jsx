@@ -18,8 +18,8 @@ const AccessoryShowcase = () => {
   ];
 
   useEffect(() => {
-    const radius = 200; // Circular motion radius
-    const horizontalOffset = 250; // Increased horizontal offset
+    const radius = 300; // Circular motion radius
+    const horizontalOffset = 400; // Increased horizontal offset
     const imageElements = Array.from(carouselRef.current.children);
     const totalImages = images.length;
 
@@ -56,7 +56,7 @@ const AccessoryShowcase = () => {
     <section className="bg-purple-700  h-screen flex flex-col lg:flex-row items-center justify-between px-8 relative overflow-hidden">
       {/* Text Section */}
       <div className="flex-1 flex flex-col font-montserrat items-center lg:items-start text-center lg:text-left text-white px-6 z-10">
-        <h1 className="text-4xl lg:text-5xl font-extrabold mb-4">
+        <h1 className="text-[55px] lg:text-5xl font-extrabold mb-4">
           Tiny Accessory <br />
           Enormous <br />
           Expression

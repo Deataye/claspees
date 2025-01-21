@@ -37,7 +37,7 @@ const Navbar = () => {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                `block lg:inline-block text-lg px-6 lg:px-0 ${
+                `block lg:inline-block text-xl  px-6 lg:px-0 ${
                   isActive ? "underline" : "hover:underline"
                 }`
               }
@@ -47,7 +47,7 @@ const Navbar = () => {
             <NavLink
               to="/shop"
               className={({ isActive }) =>
-                `block lg:inline-block text-lg px-6 lg:px-0 ${
+                `block lg:inline-block text-xl px-6 lg:px-0 ${
                   isActive ? "underline" : "hover:underline"
                 }`
               }
@@ -57,7 +57,7 @@ const Navbar = () => {
             <NavLink
               to="/about"
               className={({ isActive }) =>
-                `block lg:inline-block text-lg px-6 lg:px-0 ${
+                `block lg:inline-block text-xl px-6 lg:px-0 ${
                   isActive ? "underline" : "hover:underline"
                 }`
               }
@@ -67,7 +67,7 @@ const Navbar = () => {
             <NavLink
               to="/contact"
               className={({ isActive }) =>
-                `block lg:inline-block text-lg px-6 lg:px-0 ${
+                `block lg:inline-block text-xl px-6 lg:px-0 ${
                   isActive ? "underline" : "hover:underline"
                 }`
               }
@@ -77,7 +77,7 @@ const Navbar = () => {
             <NavLink
               to="/faqs"
               className={({ isActive }) =>
-                `block lg:inline-block text-lg px-6 lg:px-0 ${
+                `block lg:inline-block text-xl px-6 lg:px-0 ${
                   isActive ? "underline" : "hover:underline"
                 }`
               }
@@ -87,7 +87,7 @@ const Navbar = () => {
             <NavLink
               to="/howto"
               className={({ isActive }) =>
-                `block lg:inline-block text-lg px-6 lg:px-0 ${
+                `block lg:inline-block text-xl px-6 lg:px-0 ${
                   isActive ? "underline" : "hover:underline"
                 }`
               }

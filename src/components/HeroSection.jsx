@@ -38,7 +38,7 @@ const HeroSection = () => {
       {/* Text Content */}
       <div className="w-5/12 z-10 font-montserrat text-white">
         <h3 className="text-2xl font-semibold mb-4">Introducing Claspees™</h3>
-        <h1 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
+        <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
           The fashionable solution to pesky drawstring loss!
         </h1>
         <Link

@@ -44,12 +44,12 @@ const Shop = () => {
   ];
 
   return (
-    <section className="bg-white mx-auto max-w-[1000px] py-12">
+    <section className="bg-white mx-auto lg:max-w-[1300px] py-12">
       {/* Title Section */}
-      <h1 className=" text-start text-3xl font-montserrat  font-extrabold mb-4">
+      <h1 className=" text-center lg:text-start text-[35px] lg:text-[55px] font-montserrat  font-extrabold mb-4">
         ORIGINAL COLLECTION STARTER PACKS
       </h1>
-      <p className="  text-gray-600 mb-8 ">
+      <p className="  text-gray-600 text-xl mb-8 ">
         Start your collection with everything you need to embrace your cool.
         Every Claspees™ wave showcases exclusive designs that will remain
         one-of-a-kind, never to resurface. Once they bid adieu, they're gone
@@ -58,7 +58,7 @@ const Shop = () => {
       </p>
 
       {/* Product Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 max-w-[1100px] mx-auto lg:grid-cols-3 gap-12 px-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:max-w-[1350px] mx-auto lg:grid-cols-3 gap-12 px-8">
         {products.map((product, index) => (
           <div key={index} className="flex flex-col items-center group">
             {/* Image with hover effect */}

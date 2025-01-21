@@ -20,5 +20,6 @@ body{
   
   .animate-marquee {
     display: inline-flex;
+    margin-left: 200px;
     animation: marquee 10s linear infinite;
   }

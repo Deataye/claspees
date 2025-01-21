@@ -15,7 +15,7 @@ const ProductHighlight = () => {
 
       {/* Text Section */}
       <div className="flex-1 flex flex-col font-montserrat justify-center items-end pr-20">
-        <h1 className="text-[#00AEEF] text-4xl lg:text-5xl font-extrabold mb-4 text-right">
+        <h1 className="text-[#00AEEF] text-4xl lg:text-[55px] font-extrabold mb-4 text-right">
           Hold Onto Your Style
         </h1>
         <p className="text-[#00AEEF] text-lg lg:text-xl mb-8 text-right max-w-md">
