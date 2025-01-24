@@ -29,21 +29,21 @@ const HeroSection = () => {
 
   return (
     <section
-      className="relative  lg:h-screen flex lg:items-center py-4 lg:py-0 px-8 md:px-16 overflow-hidden transition-all duration-1000"
+      className="relative pb-3 lg:pb-0 lg:h-screen flex  lg:items-center   pt-20 lg:py-0 px-8 md:px-16 overflow-hidden transition-all duration-1000"
       style={{ 
         backgroundColor: slides[currentIndex].bgColor,
         transition: 'background-color 1s ease-in-out'
       }}
     >
       {/* Text Content */}
-      <div className="lg:w-5/12 z-10 mt-8 lg:mt-0 font-montserrat text-white">
+      <div className="lg:w-5/12 z-10 mt-8 lg:mt-0  font-montserrat text-white">
         <h3 className="lg:text-2xl  font-semibold mb-4">Introducing Claspees™</h3>
-        <h1 className="lg:text-7xl text-2xl font-bold mb-8 leading-tight">
+        <h1 className="lg:text-7xl text-4xl font-bold mb-8 leading-tight">
           The fashionable solution to pesky drawstring loss!
         </h1>
         <Link
           to="/shop"
-          className="inline-block px-6 py-3 lg:px-8 lg:py-4 bg-transparent border-2 border-white text-white text-lg lg:text-xl font-medium rounded-full lg:rounded-full hover:bg-white hover:text-[#00AEEF] transition-all duration-300"
+          className="inline-block px-6 py-2 lg:px-8 lg:py-4 bg-transparent border-2 border-white text-white text-lg lg:text-xl font-medium rounded-full lg:rounded-full hover:bg-white hover:text-[#00AEEF] transition-all duration-300"
         >
           Shop
         </Link>

@@ -49,13 +49,13 @@ const ProductsSection = () => {
   }, []);
 
   return (
-    <section className="bg-[#00AEEF] flex flex-col md:flex-row items-center relative">
+    <section className="bg-[#00AEEF]  flex flex-col md:flex-row items-center relative">
       {/* Text Content */}
       <div
         ref={leftRef}
         className="md:w-1/2 h-screen bg-[#00AEEF] text-white flex flex-col justify-start py-10 px-8 lg:px-16"
       >
-        <h2 className="lg:text-[55px] font-extrabold mb-6">OUR PRODUCTS</h2>
+        <h2 className="lg:text-[55px] text-3xl font-extrabold mb-6">OUR PRODUCTS</h2>
         <p className="lg:text-lg text-sm leading-relaxed mb-6">
           Have you ever experienced that sinking feeling when you pull your
           favorite hoodie out of the washer, to find one of the drawstrings
@@ -79,7 +79,7 @@ const ProductsSection = () => {
       {/* Image Content */}
       <div
         ref={rightRef}
-        className="mt-12 bg-[#FCFFF3] md:mt-0 md:w-1/2 flex justify-center"
+        className=" bg-[#FCFFF3] md:mt-0 md:w-1/2  flex justify-center"
       >
         <img
           src={Productimage} // Using the imported image

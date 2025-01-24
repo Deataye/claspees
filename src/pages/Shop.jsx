@@ -49,7 +49,7 @@ const Shop = () => {
       <h1 className=" text-center lg:text-start text-[35px] lg:text-[55px] font-montserrat  font-extrabold mb-4">
         ORIGINAL COLLECTION STARTER PACKS
       </h1>
-      <p className="  text-gray-600 text-xl mb-8 ">
+      <p className="  text-gray-600 text-xl px-6 lg:px-0 mb-8 ">
         Start your collection with everything you need to embrace your cool.
         Every Claspees™ wave showcases exclusive designs that will remain
         one-of-a-kind, never to resurface. Once they bid adieu, they're gone

@@ -6,7 +6,7 @@ const ContactUs = () => {
     <section className="flex justify-center mt-20 bg-white">
       <div className="w-full max-w-md px-6 py-8 bg-white  rounded-lg">
         {/* Heading */}
-        <h1 className="text-[55px] font-montserrat font-extrabold text-center mb-2 text-black">
+        <h1 className="text-4xl lg:text-[55px] font-montserrat font-extrabold text-center mb-2 text-black">
           Contact Us
         </h1>
         <p className="text-center text-xl font-montserrat font-extrabold text-gray-600 mb-6">

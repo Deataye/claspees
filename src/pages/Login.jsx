@@ -15,8 +15,8 @@ const Login = () => {
 
   return (
     <div className=" bg-gray-100 flex pt-16 mt-20 justify-center">
-      <div className="bg-white w-full max-w-md p-8  rounded-lg shadow-md">
-        <h1 className="text-2xl font-bold text-center mb-4">Claspees</h1>
+      <div className="bg-white w-full max-w-md p-8  font-montserrat rounded-lg shadow-md">
+        <h1 className="text-[55px] font-bold text-center mb-4">Claspees</h1>
         <h2 className="text-2xl font-bold text-start mb-6">Log in</h2>
         <p className="text-start text-gray-600 mb-6">
           Enter your email and we'll send you a login code
