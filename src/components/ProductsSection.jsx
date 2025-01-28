@@ -55,19 +55,19 @@ const ProductsSection = () => {
         ref={leftRef}
         className="md:w-1/2 h-screen bg-[#00AEEF] text-white flex flex-col justify-start py-10 px-8 lg:px-16"
       >
-        <h2 className="lg:text-[55px] text-3xl font-extrabold mb-6">OUR PRODUCTS</h2>
-        <p className="lg:text-lg text-sm leading-relaxed mb-6">
+        <h2 className="lg:text-[35px] font-montserrat text-3xl font-extrabold mb-6">OUR PRODUCTS</h2>
+        <p className="lg:text-[17px] text-sm font-montserrat leading-relaxed mb-6">
           Have you ever experienced that sinking feeling when you pull your
           favorite hoodie out of the washer, to find one of the drawstrings
           wholly lost? We've all felt that frustration. But fear not, the
           solution has arrived, called Claspees™.
         </p>
-        <p className="lg:text-lg text-sm leading-relaxed mb-6">
+        <p className="lg:text-[17px] font-montserrat text-sm leading-relaxed mb-6">
           Say goodbye to those moments of drawstring dread, as Claspees™ is here
           to end the hassle once and for all. From hoodies to footwear,
           Claspees™ has you covered, literally.
         </p>
-        <p className="lg:text-lg text-sm leading-relaxed">
+        <p className="lg:text-[17px] font-montserrat text-sm leading-relaxed">
           Claspees™ are stylish collectible accessories that prevent the loss of
           drawstrings, while accessorizing your look. They are collectible and
           come in different shapes, designs, and colors, creating limitless

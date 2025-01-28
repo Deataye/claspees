@@ -41,8 +41,8 @@ const NewsletterSection = () => {
               alt="Next Day Dispatch"
               className="w-16 h-16 mb-4"
             />
-            <h3 className="text-lg">Next Day Dispatch</h3>
-            <p className="text-sm">
+            <h3 className="text-[20px] font-montserrat ">Next Day Dispatch</h3>
+            <p className="text-[17px] font-montserrat ">
               All orders placed before 3pm EST Monday to Friday are processed
               next day.
             </p>
@@ -55,8 +55,8 @@ const NewsletterSection = () => {
               alt="Fast Delivery"
               className="w-16 h-16 mb-4"
             />
-            <h3 className="text-lg">Fast Delivery</h3>
-            <p className="text-sm">
+            <h3 className="text-[20px] font-montserrat ">Fast Delivery</h3>
+            <p className="text-[17px] font-montserrat ">
               A free fully trackable 2-3 day delivery service is available on
               all orders.
             </p>
@@ -69,8 +69,8 @@ const NewsletterSection = () => {
               alt="Exchange & Returns"
               className="w-16 h-16 mb-4"
             />
-            <h3 className="text-lg">Exchange & Returns</h3>
-            <p className="text-sm">
+            <h3 className="text-[20px] font-montserrat ">Exchange & Returns</h3>
+            <p className="text-[17px] font-montserrat ">
               We are here to help. Reach out to us directly at info@claspees.com
             </p>
           </div>
@@ -80,10 +80,10 @@ const NewsletterSection = () => {
       {/* Newsletter Section */}
       <div className="bg-[#FFD600] py-10">
         <div className="container mx-auto text-center">
-          <h2 className="text-[#00AAE6] text-3xl lg:text-5xl font-extrabold mb-4">
+          <h2 className="text-[#00AAE6] text-3xl font-montserrat lg:text-[40px] font-extrabold mb-4">
             Don't Miss a Drop
           </h2>
-          <p className="text-blue-600 mb-6">
+          <p className="text-blue-600 text-[16px] font-montserrat leading-relaxed font-medium mb-6">
             Stay up to date on the latest product releases, special offers & news by signing up for our newsletter.
           </p>
           <div className="flex flex-col justify-center items-center space-y-4">

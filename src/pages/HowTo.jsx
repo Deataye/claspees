@@ -22,7 +22,7 @@ const HowTo = () => {
       {/* Style Hacks Section */}
       <div className="bg-white py-10">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl lg:text-[55px] font-montserrat font-extrabold text-center mb-6">
+          <h2 className="text-3xl lg:text-[52px] font-montserrat font-extrabold text-center mb-10">
             Claspees Style Hacks
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

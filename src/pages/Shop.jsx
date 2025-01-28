@@ -44,12 +44,12 @@ const Shop = () => {
   ];
 
   return (
-    <section className="bg-white mx-auto mt-20 lg:max-w-[1300px] py-12">
+    <section className="bg-white mx-auto mt-20 lg:max-w-[1100px] py-12">
       {/* Title Section */}
-      <h1 className=" text-center lg:text-start text-[35px] lg:text-[55px] font-montserrat  font-extrabold mb-4">
+      <h1 className=" text-center lg:text-start text-[35px] lg:text-[40px] font-montserrat  font-extrabold mb-4">
         ORIGINAL COLLECTION STARTER PACKS
       </h1>
-      <p className="  text-gray-600 text-xl px-6 lg:px-0 mb-8 ">
+      <p className="  text-gray-600 text-xl leading-tight px-6 lg:px-0 mb-8 ">
         Start your collection with everything you need to embrace your cool.
         Every Claspees™ wave showcases exclusive designs that will remain
         one-of-a-kind, never to resurface. Once they bid adieu, they're gone
@@ -73,7 +73,7 @@ const Shop = () => {
             <p className="text-center font-semibold">{product.name}</p>
             <p className="text-center text-gray-700">{product.price}</p>
             {/* Add to Cart Button */}
-            <button className="mt-4 bg-purple-600 text-white px-6 py-2 rounded-full shadow-md hover:bg-purple-700 transition">
+            <button className="mt-4 bg-purple-600 text-white text-xl font-bold px-6 py-3 min-w-52 rounded-full shadow-md hover:bg-purple-700 transition">
               Add to cart
             </button>
           </div>

@@ -93,7 +93,7 @@ const CollectionShowcase = () => {
                 {product.price}
               </p>
               {/* Add to Cart Button */}
-              <button className="bg-purple-600 text-white px-5 lg:px-6 py-2 rounded-full shadow-md hover:bg-purple-700 transition text-sm lg:text-base">
+              <button className="bg-purple-600 text-white font-bold px-5 lg:px-6 py-3 min-w-52 rounded-full shadow-md hover:bg-purple-700 transition text-sm lg:text-xl">
                 Add to cart
               </button>
             </div>

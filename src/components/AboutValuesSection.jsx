@@ -36,7 +36,7 @@ const AboutValuesSection = () => {
       {
         scale: 1,
         opacity: 1,
-        duration: 2,
+        duration: 3,
         ease: 'power2.out',
         scrollTrigger: {
           trigger: valuesContainer,
@@ -93,10 +93,10 @@ const AboutValuesSection = () => {
         ref={textRef}
         className="py-16 px-8 md:px-16 lg:px-24 text-center md:text-left"
       >
-        <h2 className="text-3xl md:text-[55px] font-bold mb-6 text-black">
+        <h2 className="text-3xl md:text-[35px] font-montserrat font-extrabold mb-6 text-black">
           ABOUT US
         </h2>
-        <p className="text-lg text-gray-700 leading-relaxed">
+        <p className="text-[17px] text-gray-700 font-medium font-montserrat leading-relaxed">
           We've created a product that embodies limitless possibilities. As the
           ultimate brand for fashionable yet functional collectible drawstring
           accessories, we're reshaping how individuals express their unique
@@ -110,7 +110,7 @@ const AboutValuesSection = () => {
 
       {/* Our Values Section */}
       <div className="bg-gray-100 py-0 px-8 md:px-16 lg:px-0">
-        <h2 className="text-3xl md:text-[55px] font-bold mb-6 text-black lg:px-24">
+        <h2 className="text-3xl md:text-[35px] font-montserrat font-extrabold mb-6 text-black lg:px-24">
           OUR VALUES
         </h2>
 
@@ -124,8 +124,8 @@ const AboutValuesSection = () => {
               key={index}
               className={`${value.bgColor} p-14 text-white`}
             >
-              <h3 className="text-2xl font-bold mb-4">{value.title}</h3>
-              <p className="text-base leading-relaxed">{value.content}</p>
+              <h3 className="text-[20px]  font-montserrat font-extrabold mb-4">{value.title}</h3>
+              <p className="text-[17px] font-medium font-montserrat leading-relaxed">{value.content}</p>
             </div>
           ))}
         </div>

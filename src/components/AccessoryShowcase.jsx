@@ -31,7 +31,7 @@ const AccessoryShowcase = () => {
       const blur = index === currentIndex ? 0 : 7;
 
       gsap.to(image, {
-        duration: 0.4,
+        duration: 0.2,
         x,
         y,
         scale,
@@ -54,17 +54,17 @@ const AccessoryShowcase = () => {
   return (
     <section className="bg-purple-700 h-screen flex flex-col lg:flex-row items-center justify-between px-8 relative overflow-hidden">
       {/* Text Section */}
-      <div className="flex-1 flex flex-col font-montserrat items-center lg:items-start text-center lg:text-left text-white px-6 z-10 mt-12 lg:mt-0">
-        <h1 className="text-4xl lg:text-7xl leading-tight font-extrabold mb-4">
+      <div className="flex-1 flex flex-col font-montserrat  items-center lg:items-start text-center lg:text-left text-white px-6 z-10 mt-12 lg:mt-0">
+        <h1 className="text-4xl lg:text-[50px] leading-tight font-extrabold mb-4">
           Tiny Accessory <br />
           Enormous <br />
           Expression
         </h1>
-        <p className="text-sm lg:text-xl mb-6 max-w-sm lg:max-w-none">
+        <p className="text-sm lg:text-[22px] leading-relaxed mb-6 max-w-sm lg:max-w-none">
           Excite your wardrobe. Express your uniqueness and have fun with your
           style! Collect signature Claspees before they run out.
         </p>
-        <button className="bg-transparent font-montserrat text-white border-2 border-white px-8 py-3 rounded-full text-lg hover:bg-white hover:text-purple-700 transition">
+        <button className="bg-transparent font-montserrat font-extrabold text-white border-4 border-white px-8 py-4 min-w-52 rounded-full text-xl hover:bg-white hover:text-purple-700 transition">
           Shop
         </button>
       </div>

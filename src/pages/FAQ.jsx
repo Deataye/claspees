@@ -126,14 +126,14 @@ const FAQ = () => {
     <section className="bg-white py-8 mt-16 font-montserrat">
       {/* FAQ Header */}
       <div className="text-center py-8">
-        <h2 className="text-[55px] font-extrabold">FAQ's</h2>
-        <p className="text-gray-600 text-lg mt-2">
+        <h2 className="text-[52px] font-extrabold">FAQ's</h2>
+        <p className="text-gray-600 font-semibold text-[16px] mt-2">
           Want to know more about Claspees? Don't worry, we got you covered!
         </p>
       </div>
 
       {/* How to Apply Section */}
-      <div className="py-10 flex justify-center">
+      <div className="py-8 flex justify-center">
         <img
           src={HowTo}
           alt="How to Apply Claspees"
@@ -148,7 +148,7 @@ const FAQ = () => {
             key={index}
             className="py-4 border-b border-gray-300"
           >
-            <summary className="text-lg font-extrabold cursor-pointer flex justify-between items-center hover:text-blue-600">
+            <summary className="text-[16px] font-extrabold cursor-pointer flex justify-between items-center hover:text-blue-600">
               {faq.question}
               <FontAwesomeIcon icon={faChevronDown} className="ml-2 text-gray-500" />
             </summary>
@@ -158,13 +158,13 @@ const FAQ = () => {
       </div>
        {/* General Questions */}
       <div className="max-w-[650px] mx-auto text-start py-8 px-4">
-        <h3 className="text-2xl font-extrabold mb-6">General Questions</h3>
+        <h3 className="text-[24px] font-extrabold mb-6">General Questions</h3>
         {generalFaqs.map((faq, index) => (
           <details
             key={index}
             className="py-4 border-b border-gray-300"
           >
-            <summary className="text-lg font-extrabold cursor-pointer flex justify-between items-center hover:text-blue-600">
+            <summary className="text-[16px] font-extrabold cursor-pointer flex justify-between items-center hover:text-blue-600">
               {faq.question}
               <FontAwesomeIcon icon={faChevronDown} className="ml-2 text-gray-500" />
             </summary>
