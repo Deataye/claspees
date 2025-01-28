@@ -24,7 +24,7 @@ const Navbar = () => {
 
   {/* Navigation Links */}
   <nav
-    className={`lg:flex lg:space-x-6 text-purple-600 font-montserrat font-sans font-medium absolute lg:static top-full left-0 w-full bg-[#FFFFF0] lg:w-auto py-4 lg:py-0 shadow-md lg:shadow-none transition-transform duration-300 ${
+    className={`lg:flex lg:space-x-6 text-purple-600 font-montserrat  font-medium absolute lg:static top-full left-0 w-full bg-[#FFFFF0] lg:w-auto py-4 lg:py-0 shadow-md lg:shadow-none transition-transform duration-300 ${
       menuOpen ? "translate-x-0" : "-translate-x-full"
     } lg:translate-x-0`}
   >
