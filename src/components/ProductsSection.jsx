@@ -33,7 +33,7 @@ const ProductsSection = () => {
     // Animate right section sliding in from right to left when it enters the viewport
     gsap.fromTo(
       rightElement,
-      { x: '100%', opacity: 0 },
+      { x: '20%', opacity: 0 },
       {
         x: '0%',
         opacity: 1,
