@@ -35,40 +35,48 @@ const HeroSection = () => {
       }}
     >
       {/* Mobile View */}
-      <div className="lg:hidden h-full w-full relative">
-        {/* Background Image with Gradient Overlay */}
-        <div
-          className="absolute inset-0 bg-contain bg-no-repeat bg-center transition-opacity duration-1000"
-          style={{
-            backgroundImage: `url(${slides[currentIndex].image})`,
-            opacity: 0.9,
-          }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-        </div>
+<div className="lg:hidden h-full w-full relative flex flex-col">
+  {/* Content Container - Takes top portion */}
+  <div className="relative flex-1 flex flex-col justify-start items-center text-center pt-24 px-4 z-10">
+    <div className="max-w-[400px]">
+      <h3 className="text-xl font-extrabold text-white mb-4">
+        Introducing Claspees™
+      </h3>
+      <h1 className="text-3xl font-extrabold text-white mb-8 leading-tight">
+        The fashionable solution to pesky drawstring loss!
+      </h1>
+      <Link
+        to="/shop"
+        className="inline-block px-12 py-3 bg-transparent border-4 border-white text-white text-lg font-extrabold rounded-full 
+        hover:bg-white hover:text-current transition-all duration-300 whitespace-nowrap"
+      >
+        Shop Now
+      </Link>
+    </div>
+  </div>
 
-        {/* Content Container */}
-        <div className="relative h-full flex flex-col justify-start  items-center text-center pt-24 pb-16 px-4">
-          <div className="max-w-[400px]">
-            <h3 className="text-xl font-extrabold text-white mb-4">
-              Introducing Claspees™
-            </h3>
-            <h1 className="text-3xl font-extrabold text-white mb-8 leading-tight">
-              The fashionable solution to pesky drawstring loss!
-            </h1>
-            <Link
-              to="/shop"
-              className="inline-block px-12 py-3 bg-transparent border-4 border-white text-white text-lg font-extrabold rounded-full 
-              hover:bg-white hover:text-current transition-all duration-300 whitespace-nowrap"
-            >
-              Shop Now
-            </Link>
-          </div>
-        </div>
+  {/* Image Container - Positioned at bottom */}
+  <div className="relative h-[100%] w-full mt-auto -mb-20 overflow-hidden">
+    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-20" />
+    {slides.map((slide, index) => (
+      <div
+        key={index}
+        className={`absolute inset-0 transition-opacity duration-1000 ${
+          index === currentIndex ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        <img
+          src={slide.image}
+          alt={`Slide ${index + 1}`}
+          className="w-full h-full o  object-contain"
+        />
       </div>
+    ))}
+  </div>
+</div>
 
       {/* Desktop View (Unchanged) */}
-      <div className="hidden lg:block lg:w-5/12 z-10 mt-8 lg:mt-0 font-montserrat text-white px-16">
+      <div className="hidden lg:block lg:w-5/12 z-10  mt-8 lg:mt-0 font-montserrat text-white px-16">
         <h3 className="lg:text-2xl font-extrabold font-sans mb-4">
           Introducing Claspees™
         </h3>

@@ -17,10 +17,27 @@ const AccessoryShowcase = () => {
     AccessoryShowcase5,
   ];
 
+  // Add color array matching your slides
+  const colors = [
+    "#8E44AD",  // Purple
+    "#00AEEF",  // Blue
+    "#FF7500",  // Orange
+    "#FF03E7",  // Pink
+    "#00DDE2"   // Teal
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, 3000); // Change slide every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   useEffect(() => {
     const isMobile = window.innerWidth < 1024;
     const radius = isMobile ? 150 : 300;
-    const horizontalOffset = isMobile ? 0 : 400; // Reduced offset for mobile screens
+    const horizontalOffset = isMobile ? 0 : 400;
     const imageElements = Array.from(carouselRef.current.children);
     const totalImages = images.length;
 
@@ -53,8 +70,15 @@ const AccessoryShowcase = () => {
   };
 
   return (
-    <section className="bg-purple-700 lg:h-screen h-auto flex flex-col lg:flex-row items-center justify-between px-4 lg:px-8 relative overflow-hidden">
-      {/* Text Section - Stays on top for mobile */}
+    <section 
+      className="lg:h-screen h-auto flex flex-col lg:flex-row items-center justify-between px-4 lg:px-8 relative overflow-hidden"
+      style={{
+        backgroundColor: colors[currentIndex],
+        transition: 'background-color 1s ease-in-out'
+      }}
+    >
+      {/* Rest of the component remains exactly the same */}
+      {/* Text Section */}
       <div className="flex-1 flex flex-col font-montserrat items-center lg:items-start text-center lg:text-left text-white px-2 lg:px-6 z-10 mt-8 lg:mt-0">
         <h1 className="text-3xl lg:text-[50px] leading-tight font-extrabold mb-4">
           Tiny Accessory <br />
@@ -65,13 +89,12 @@ const AccessoryShowcase = () => {
           Excite your wardrobe. Express your uniqueness and have fun with your
           style! Collect signature Claspees before they run out.
         </p>
-        {/* Hidden on mobile, shown on desktop */}
         <button className="hidden lg:block bg-transparent font-montserrat font-extrabold text-white border-4 border-white px-8 py-4 min-w-52 rounded-full text-xl hover:bg-white hover:text-purple-700 transition">
           Shop
         </button>
       </div>
 
-      {/* Carousel Section - Middle position for mobile */}
+      {/* Carousel Section */}
       <div className="flex-1 relative h-[35vh] lg:h-full w-full flex items-center justify-center perspective-1000 mt-24 lg:mt-0 mb-32 lg:mb-0">
         <div 
           ref={carouselRef} 
@@ -88,41 +111,38 @@ const AccessoryShowcase = () => {
         </div>
       </div>
 
-      {/* Mobile Controls Container - Bottom section for mobile */}
+      {/* Mobile Controls */}
       <div className="lg:hidden w-full  flex flex-col items-center  pt-8 pb-12 space-y-8">
-        {/* Shop Button - Visible only on mobile */}
         <button className="bg-transparent font-montserrat font-extrabold text-white border-4 border-white px-6 py-3 min-w-48 rounded-full text-lg hover:bg-white hover:text-purple-700 transition">
           Shop
         </button>
-        
-        {/* Arrow Buttons - Centered below shop button */}
         <div className="flex items-center justify-center space-x-4">
           <button
             onClick={handlePrev}
-            className="bg-transparent text-white border-2 border-purple-800 w-12 h-12 flex items-center justify-center rounded-full hover:bg-purple-800 hover:text-white transition"
+            className="bg-transparent text-white border-2 border-white w-12 h-12 flex items-center justify-center rounded-full hover:bg-purple-800 hover:text-white transition"
           >
             <i className="fas fa-arrow-left"></i>
           </button>
           <button
             onClick={handleNext}
-            className="bg-transparent text-white border-2 border-purple-800 w-12 h-12 flex items-center justify-center rounded-full hover:bg-purple-800 hover:text-white transition"
+            className="bg-transparent text-white border-2 border-white w-12 h-12 flex items-center justify-center rounded-full hover:bg-purple-800 hover:text-white transition"
           >
             <i className="fas fa-arrow-right"></i>
           </button>
         </div>
       </div>
 
-      {/* Desktop Arrows - Stays at bottom */}
+      {/* Desktop Arrows */}
       <div className="hidden lg:flex absolute bottom-8 left-1/2 transform -translate-x-1/2 items-center justify-center space-x-4 z-10">
         <button
           onClick={handlePrev}
-          className="bg-transparent border border-purple-800 text-white w-12 h-12 flex items-center justify-center rounded-full hover:bg-purple-800 hover:text-white transition"
+          className="bg-transparent border border-white text-white w-12 h-12 flex items-center justify-center rounded-full hover:bg-purple-800 hover:text-white transition"
         >
           <i className="fas fa-arrow-left"></i>
         </button>
         <button
           onClick={handleNext}
-          className="bg-transparent border border-purple-800 text-white w-12 h-12 flex items-center justify-center rounded-full hover:bg-purple-800 hover:text-white transition"
+          className="bg-transparent border border-white text-white w-12 h-12 flex items-center justify-center rounded-full hover:bg-purple-800 hover:text-white transition"
         >
           <i className="fas fa-arrow-right"></i>
         </button>
