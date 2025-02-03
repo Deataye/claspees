@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
+  const navigate = useNavigate();
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -9,8 +11,14 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log("Email submitted:", email);
+    
+    if (email === "shahzaiba61@gmail.com") {
+      // Redirect to admin panel
+      navigate("/admin-panel");
+    } else {
+      // Handle regular user flow
+      console.log("Email submitted:", email);
+    }
   };
 
   return (
